@@ -1,0 +1,14 @@
+﻿@using Xela_api_pariss.Servicios;
+@{
+    Layout = "../Shared/_LayoutNuevo3";
+}
+@{
+    ViewData["Title"] = "PrincipalPage";
+}
+@Html.AntiForgeryToken()
+         @if (User.IsInRole(Constantes.RolAdmin))
+        {
+            <h6 style="padding-left:30%"><b></b></h6>
+        <div id="barChart" style="max-height: 350px; padding-left:20%"></div>
+        }
+

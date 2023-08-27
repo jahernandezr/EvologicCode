@@ -1,0 +1,309 @@
+﻿@*@model LoginViewModel*@
+@{
+    //Layout = "_LayoutNuevo1";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>EvoLogic Code</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="~/assets3/assets/img/favicon.png" rel="icon">
+    <link href="~/assets3/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/assets3/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets3/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/assets3/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="~/assets3/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/assets3/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="~/assets3/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/assets3/assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: Nova
+    * Updated: Jul 27 2023 with Bootstrap v5.3.1
+    * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body class="page-index">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1 class="d-flex align-items-center"> <img src="~/assets3/assets/img/Icono.jpg"/>voLogic Code</></h1>
+            </a>
+
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a asp-action="PagePrincipal" asp-controller="Usuarios" class="active">Home</a></li>
+                    <li><a asp-action="Login" asp-controller="Usuarios">Iniciar Sesion</a></li>
+                    <li><a asp-action="ContactoInsert" asp-controller="Usuarios">Quiero Comunicarme!!</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <h2 data-aos="fade-up">Nuestro Lema</h2>
+                    <blockquote data-aos="fade-up" data-aos-delay="100">
+                        <p>Conectando Ideas, Creando Soluciones Web</p>
+                    </blockquote>
+                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <a asp-action="Login" asp-controller="Usuarios" class="btn-get-started">Iniciar Sesion</a>
+                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section><!-- End Hero Section -->
+
+    <main id="main">
+
+        <!-- ======= Our Services Section ======= -->
+        <section id="services-list" class="services-list">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>Servicios</h2>
+
+                </div>
+
+                <div class="row gy-5">
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
+                        <div>
+                            <h4 class="title"><a href="#" class="stretched-link">Diseño y Desarrollo de Sitios Web</a></h4>
+                            <p class="description">Creación de sitios web personalizados, desde sitios web informativos hasta sitios web de comercio electrónico complejos.</p>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
+                        <div>
+                            <h4 class="title"><a href="#" class="stretched-link">Desarrollo de Aplicaciones Web</a></h4>
+                            <p class="description">Creación de aplicaciones web personalizadas para diferentes propósitos, como gestión de contenido, herramientas internas, paneles de administración, etc</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
+                        <div>
+                            <h4 class="title"><a href="#" class="stretched-link">Integración de Redes Sociales</a></h4>
+                            <p class="description">Integrar funciones de redes sociales en los sitios web y aplicaciones para facilitar el intercambio y la participación de los usuarios.</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div>
+                        <div>
+                            <h4 class="title"><a href="#" class="stretched-link">Optimización de Velocidad y Rendimiento</a></h4>
+                            <p class="description">Mejorar la velocidad y el rendimiento de los sitios web y aplicaciones para una experiencia de usuario óptima.</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                        <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div>
+                        <div>
+                            <h4 class="title"><a href="#" class="stretched-link">Diseño de Interfaces de Usuario (UI) y Experiencia de Usuario (UX)</a></h4>
+                            <p class="description">Diseñar interfaces atractivas y funcionales que brinden una excelente experiencia al usuario.</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+                        <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
+                        <div>
+                            <h4 class="title"><a href="#" class="stretched-link">Integración de Plataformas y APIs</a></h4>
+                            <p class="description">Integrar diferentes sistemas y servicios a través de APIs para mejorar la funcionalidad y la automatización.</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                </div>
+
+            </div>
+        </section><!-- End Our Services Section -->
+        <!-- ======= Call To Action Section ======= -->
+        <section id="call-to-action" class="call-to-action">
+            <div class="container" data-aos="fade-up">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h3>Vision</h3>
+                        <p>Nuestra visión es transformar la web en un espacio dinámico e innovador, donde las soluciones tecnológicas potencien el crecimiento y el éxito de nuestros clientes. Nos esforzamos por ser líderes en la creación de experiencias digitales excepcionales, fusionando diseño creativo y desarrollo de vanguardia. Con un enfoque centrado en el cliente y una pasión por la innovación, trabajamos incansablemente para convertir ideas en realidades digitales, empoderando a las empresas para que alcancen sus metas y superen sus expectativas. Nuestro compromiso con la excelencia, la colaboración y la constante evolución nos guía mientras construimos un mañana en línea más eficiente, atractivo y transformador.</p>
+                        @*<a class="cta-btn" href="#">Call To Action</a>*@
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Call To Action Section -->
+        <!-- ======= Recent Blog Posts Section ======= -->
+        @*<section id="recent-posts" class="recent-posts">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>Recent Blog Posts</h2>
+
+                </div>
+
+                <div class="row gy-5">
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="post-box">
+                            <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
+                            <div class="meta">
+                                <span class="post-date">Tue, December 12</span>
+                                <span class="post-author"> / Julia Parker</span>
+                            </div>
+                            <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+                            <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa est officiis. Modi qui magni est...</p>
+                            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="post-box">
+                            <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
+                            <div class="meta">
+                                <span class="post-date">Fri, September 05</span>
+                                <span class="post-author"> / Mario Douglas</span>
+                            </div>
+                            <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
+                            <p>Voluptatem nesciunt omnis libero autem tempora enim ut ipsam id. Odit quia ab eum assumenda. Quisquam omnis doloribus...</p>
+                            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="post-box">
+                            <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
+                            <div class="meta">
+                                <span class="post-date">Tue, July 27</span>
+                                <span class="post-author"> / Lisa Hunter</span>
+                            </div>
+                            <h3 class="post-title">Quia assumenda est et veritati</h3>
+                            <p>Quia nam eaque omnis explicabo similique eum quaerat similique laboriosam. Quis omnis repellat sed quae consectetur magnam...</p>
+                            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="post-box">
+                            <div class="post-img"><img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt=""></div>
+                            <div class="meta">
+                                <span class="post-date">Tue, Sep 16</span>
+                                <span class="post-author"> / Mario Douglas</span>
+                            </div>
+                            <h3 class="post-title">Pariatur quia facilis similique deleniti</h3>
+                            <p>Et consequatur eveniet nam voluptas commodi cumque ea est ex. Aut quis omnis sint ipsum earum quia eligendi...</p>
+                            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Recent Blog Posts Section -->
+*@
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-content">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-12 footer-info">
+                        <img src="~/assets3/assets/img/Icono.jpg" /><h4>voLogic Code</h4>
+                        <div class="social-links d-flex  mt-3">
+                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-6 footer-links">
+                        <h4>Links</h4>
+                        <ul>
+                            <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
+                            <li><i class="bi bi-dash"></i><a asp-action="Login" asp-controller="Usuarios">Iniciar Sesion</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#services-list">Services</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#call-to-action">Vision</a></li>
+                            <li><i class="bi bi-dash"></i><a asp-action="ContactoInsert" asp-controller="Usuarios">Quiero Comunicarme!!</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-5 col-md-12 footer-contact text-center text-md-start">
+                        <h4>Contacto</h4>
+                        <p>
+                            Calle 101 Nro 5b-25 <br>
+                            Bogota D.C.<br>
+                            Colombia <br><br>
+                            <strong>Celular:</strong> 318 772 7030<br>
+                            <strong>Email:</strong> jalexhernandezr@gmail.com<br>
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-legal">
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>EvoLogic Code</span></strong>. Derechos reservados
+                </div>
+                <div class="credits">
+              
+                </div>
+            </div>
+        </div>
+    </footer><!-- End Footer --><!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="~/assets3/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets3/assets/vendor/aos/aos.js"></script>
+    <script src="~/assets3/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/assets3/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/assets3/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/assets3/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/assets3/assets/js/main.js"></script>
+
+</body>
+
+</html>
