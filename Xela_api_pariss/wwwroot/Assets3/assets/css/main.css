@@ -490,6 +490,15 @@ section {
   z-index: 3;
 }
 
+.imgcontact {
+    width: 100%;
+    background: url('../img/contact-header.jpg');
+    background-size: cover;
+    position: relative;
+    padding: 120px 0;
+    z-index: 3;
+}
+
 @media (min-width: 1034px) {
   .hero:after {
     position: absolute;

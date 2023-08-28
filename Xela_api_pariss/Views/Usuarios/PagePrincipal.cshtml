@@ -49,7 +49,7 @@
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a asp-action="PagePrincipal" asp-controller="Usuarios" class="logo d-flex align-items-center">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
                 <h1 class="d-flex align-items-center"> <img src="~/assets3/assets/img/Icono.jpg"/>voLogic Code</></h1>
@@ -60,9 +60,11 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a asp-action="PagePrincipal" asp-controller="Usuarios" class="active">Home</a></li>
+                    <li><a asp-action="PagePrincipal" asp-controller="Usuarios" class="active">Inicio</a></li>
+                    <li><a href="#Serviciosdiv" class="active">Servicios</a></li>
+                    <li><a href="#Visiondiv" class="active">Vision</a></li>
                     <li><a asp-action="Login" asp-controller="Usuarios">Iniciar Sesion</a></li>
-                    <li><a asp-action="ContactoInsert" asp-controller="Usuarios">Quiero Comunicarme!!</a></li>
+                    <li><a asp-action="Contactos" asp-controller="Usuarios">Quiero Comunicarme!!</a></li>
                 </ul>
             </nav><!-- .navbar -->
         </div>
@@ -89,10 +91,11 @@
     <main id="main">
 
         <!-- ======= Our Services Section ======= -->
+        <div id="Serviciosdiv"></div>
         <section id="services-list" class="services-list">
             <div class="container" data-aos="fade-up">
 
-                <div class="section-header">
+                <div class="section-header" >
                     <h2>Servicios</h2>
 
                 </div>
@@ -153,10 +156,11 @@
             </div>
         </section><!-- End Our Services Section -->
         <!-- ======= Call To Action Section ======= -->
+        <div id="Visiondiv"></div>
         <section id="call-to-action" class="call-to-action">
-            <div class="container" data-aos="fade-up">
+            <div class="container" data-aos="fade-up" >
                 <div class="row justify-content-center">
-                    <div class="col-lg-6 text-center">
+                    <div class="col-lg-6 text-center" >
                         <h3>Vision</h3>
                         <p>Nuestra visión es transformar la web en un espacio dinámico e innovador, donde las soluciones tecnológicas potencien el crecimiento y el éxito de nuestros clientes. Nos esforzamos por ser líderes en la creación de experiencias digitales excepcionales, fusionando diseño creativo y desarrollo de vanguardia. Con un enfoque centrado en el cliente y una pasión por la innovación, trabajamos incansablemente para convertir ideas en realidades digitales, empoderando a las empresas para que alcancen sus metas y superen sus expectativas. Nuestro compromiso con la excelencia, la colaboración y la constante evolución nos guía mientras construimos un mañana en línea más eficiente, atractivo y transformador.</p>
                         @*<a class="cta-btn" href="#">Call To Action</a>*@
@@ -165,8 +169,8 @@
 
             </div>
         </section><!-- End Call To Action Section -->
-        <!-- ======= Recent Blog Posts Section ======= -->
-        @*<section id="recent-posts" class="recent-posts">
+       @* <!-- ======= Recent Blog Posts Section ======= -->
+        <section id="recent-posts" class="recent-posts">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-header">
@@ -257,7 +261,7 @@
                             <li><i class="bi bi-dash"></i><a asp-action="Login" asp-controller="Usuarios">Iniciar Sesion</a></li>
                             <li><i class="bi bi-dash"></i> <a href="#services-list">Services</a></li>
                             <li><i class="bi bi-dash"></i> <a href="#call-to-action">Vision</a></li>
-                            <li><i class="bi bi-dash"></i><a asp-action="ContactoInsert" asp-controller="Usuarios">Quiero Comunicarme!!</a></li>
+                            <li><i class="bi bi-dash"></i><a asp-action="Contactos" asp-controller="Usuarios">Quiero Comunicarme!!</a></li>
                         </ul>
                     </div>
                     

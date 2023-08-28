@@ -37,6 +37,11 @@ namespace Xela_api_pariss.Controllers
             return View();
         }
         [AllowAnonymous]
+        public IActionResult Contactos()
+        {
+            return View();
+        }
+        [AllowAnonymous]
         public IActionResult Registro()
         {
             return View();
