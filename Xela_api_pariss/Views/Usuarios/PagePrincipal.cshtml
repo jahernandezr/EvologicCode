@@ -63,6 +63,7 @@
                     <li><a asp-action="PagePrincipal" asp-controller="Usuarios" class="active">Inicio</a></li>
                     <li><a href="#Serviciosdiv" class="active">Servicios</a></li>
                     <li><a href="#Visiondiv" class="active">Vision</a></li>
+                    <li><a href="#Proyectosdiv" class="active">Proyectos</a></li>
                     <li><a asp-action="Login" asp-controller="Usuarios">Iniciar Sesion</a></li>
                     <li><a asp-action="Contactos" asp-controller="Usuarios">Quiero Comunicarme!!</a></li>
                 </ul>
@@ -103,7 +104,7 @@
                 <div class="row gy-5">
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
+                        <div class="icon flex-shrink-0"><i class="bi bi-brush" style="color: #f57813;"></i></div>
                         <div>
                             <h4 class="title"><a href="#" class="stretched-link">Diseño y Desarrollo de Sitios Web</a></h4>
                             <p class="description">Creación de sitios web personalizados, desde sitios web informativos hasta sitios web de comercio electrónico complejos.</p>
@@ -112,7 +113,7 @@
                     <!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
+                        <div class="icon flex-shrink-0"><i class="bi bi-code-square" style="color: #15a04a;"></i></div>
                         <div>
                             <h4 class="title"><a href="#" class="stretched-link">Desarrollo de Aplicaciones Web</a></h4>
                             <p class="description">Creación de aplicaciones web personalizadas para diferentes propósitos, como gestión de contenido, herramientas internas, paneles de administración, etc</p>
@@ -120,7 +121,7 @@
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                        <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
+                        <div class="icon flex-shrink-0"><i class="bi bi-layout-wtf" style="color: #d90769;"></i></div>
                         <div>
                             <h4 class="title"><a href="#" class="stretched-link">Integración de Redes Sociales</a></h4>
                             <p class="description">Integrar funciones de redes sociales en los sitios web y aplicaciones para facilitar el intercambio y la participación de los usuarios.</p>
@@ -128,7 +129,7 @@
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                        <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div>
+                        <div class="icon flex-shrink-0"><i class="bi bi-speedometer2" style="color: #15bfbc;"></i></div>
                         <div>
                             <h4 class="title"><a href="#" class="stretched-link">Optimización de Velocidad y Rendimiento</a></h4>
                             <p class="description">Mejorar la velocidad y el rendimiento de los sitios web y aplicaciones para una experiencia de usuario óptima.</p>
@@ -136,7 +137,7 @@
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                        <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div>
+                        <div class="icon flex-shrink-0"><i class="bi bi-rulers" style="color: #f5cf13;"></i></div>
                         <div>
                             <h4 class="title"><a href="#" class="stretched-link">Diseño de Interfaces de Usuario (UI) y Experiencia de Usuario (UX)</a></h4>
                             <p class="description">Diseñar interfaces atractivas y funcionales que brinden una excelente experiencia al usuario.</p>
@@ -144,7 +145,7 @@
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-                        <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
+                        <div class="icon flex-shrink-0"><i class="bi bi-cloud-plus" style="color: #1335f5;"></i></div>
                         <div>
                             <h4 class="title"><a href="#" class="stretched-link">Integración de Plataformas y APIs</a></h4>
                             <p class="description">Integrar diferentes sistemas y servicios a través de APIs para mejorar la funcionalidad y la automatización.</p>
@@ -160,8 +161,8 @@
         <section id="call-to-action" class="call-to-action">
             <div class="container" data-aos="fade-up" >
                 <div class="row justify-content-center">
-                    <div class="col-lg-6 text-center" >
-                        <h3>Vision</h3>
+                    <div class="col-lg-6 text-justific " >
+                        <h3 style="padding-left:35%">Vision</h3>
                         <p>Nuestra visión es transformar la web en un espacio dinámico e innovador, donde las soluciones tecnológicas potencien el crecimiento y el éxito de nuestros clientes. Nos esforzamos por ser líderes en la creación de experiencias digitales excepcionales, fusionando diseño creativo y desarrollo de vanguardia. Con un enfoque centrado en el cliente y una pasión por la innovación, trabajamos incansablemente para convertir ideas en realidades digitales, empoderando a las empresas para que alcancen sus metas y superen sus expectativas. Nuestro compromiso con la excelencia, la colaboración y la constante evolución nos guía mientras construimos un mañana en línea más eficiente, atractivo y transformador.</p>
                         @*<a class="cta-btn" href="#">Call To Action</a>*@
                     </div>
@@ -169,57 +170,58 @@
 
             </div>
         </section><!-- End Call To Action Section -->
-       @* <!-- ======= Recent Blog Posts Section ======= -->
+        <!-- ======= Recent Blog Posts Section ======= -->
+        <div id="Proyectosdiv"></div>
         <section id="recent-posts" class="recent-posts">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-header">
-                    <h2>Recent Blog Posts</h2>
+                    <h2>Nuestros proyectos </h2>
 
                 </div>
 
                 <div class="row gy-5">
 
-                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="post-box">
-                            <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
-                            <div class="meta">
+                            <div class="post-img"><img src="~/imagenes/cruzliquidacion.png" class="img-fluid" alt=""></div>
+                           @* <div class="meta">
                                 <span class="post-date">Tue, December 12</span>
                                 <span class="post-author"> / Julia Parker</span>
                             </div>
                             <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
                             <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa est officiis. Modi qui magni est...</p>
                             <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                        </div>
+                     *@   </div>
                     </div>
 
-                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="post-box">
-                            <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
-                            <div class="meta">
+                            <div class="post-img"><img src="~/imagenes/logoCB.png" class="img-fluid" alt=""></div>
+                           @* <div class="meta">
                                 <span class="post-date">Fri, September 05</span>
                                 <span class="post-author"> / Mario Douglas</span>
                             </div>
                             <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
                             <p>Voluptatem nesciunt omnis libero autem tempora enim ut ipsam id. Odit quia ab eum assumenda. Quisquam omnis doloribus...</p>
                             <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                        </div>
+                  *@      </div>
                     </div>
 
-                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="post-box">
-                            <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
-                            <div class="meta">
+                            <div class="post-img"><img src="~/imagenes/SASESERVIS.png" class="img-fluid" alt=""></div>
+                           @* <div class="meta">
                                 <span class="post-date">Tue, July 27</span>
                                 <span class="post-author"> / Lisa Hunter</span>
                             </div>
                             <h3 class="post-title">Quia assumenda est et veritati</h3>
                             <p>Quia nam eaque omnis explicabo similique eum quaerat similique laboriosam. Quis omnis repellat sed quae consectetur magnam...</p>
                             <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                        </div>
+               *@         </div>
                     </div>
 
-                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+@*                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="post-box">
                             <div class="post-img"><img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt=""></div>
                             <div class="meta">
@@ -230,14 +232,17 @@
                             <p>Et consequatur eveniet nam voluptas commodi cumque ea est ex. Aut quis omnis sint ipsum earum quia eligendi...</p>
                             <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                         </div>
-                    </div>
+                    </div>*@
 
                 </div>
 
             </div>
         </section><!-- End Recent Blog Posts Section -->
-*@
+
     </main><!-- End #main -->
+
+    <hr/>
+    <hr/>
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
 
@@ -261,6 +266,7 @@
                             <li><i class="bi bi-dash"></i><a asp-action="Login" asp-controller="Usuarios">Iniciar Sesion</a></li>
                             <li><i class="bi bi-dash"></i> <a href="#services-list">Services</a></li>
                             <li><i class="bi bi-dash"></i> <a href="#call-to-action">Vision</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#Proyectosdiv">Proyectos</a></li>
                             <li><i class="bi bi-dash"></i><a asp-action="Contactos" asp-controller="Usuarios">Quiero Comunicarme!!</a></li>
                         </ul>
                     </div>

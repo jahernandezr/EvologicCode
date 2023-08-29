@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.VisualBasic;
 using NuGet.Versioning;
 using System.Runtime.InteropServices;
@@ -73,6 +74,29 @@ namespace Xela_api_pariss.Controllers
             }
             return View(modelo);
         }
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> InsertarContact([FromBody] Code_Contacto modelo)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("sininformacion"); // Cambiado a BadRequest para indicar que la solicitud es incorrecta
+            }
+
+            try
+            {
+                context.Code_Contacto.Add(modelo); // Agregar modelo al contexto
+                await context.SaveChangesAsync(); // Guardar cambios en la base de datos
+
+                return Ok("ok");
+            }
+            catch (Exception ex)
+            {
+                // Agregar manejo de excepciones y registro si es necesario
+                return StatusCode(500, "An error occurred"); // Devolver un código de estado 500 (Internal Server Error)
+            }
+        }
+
         [HttpPost]
         [AllowAnonymous]
         public async Task<IActionResult> Login(LoginViewModel modelo) {

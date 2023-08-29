@@ -149,6 +149,7 @@
                             </div>
                         <form class="form-group" style="padding-top: 5%" asp-action="Login">
                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                @Html.AntiForgeryToken()
                             <div class="mb-3 col-12" style="opacity: 0.5">
                                 <label asp-for="Email" class="form-label"> </label>
                                 <input asp-for="Email" class="form-control" type="email" />
@@ -210,6 +211,7 @@
                             <li><i class="bi bi-dash"></i><a asp-action="Login" asp-controller="Usuarios">Iniciar Sesion</a></li>
                             <li><i class="bi bi-dash"></i> <a href="#services-list">Services</a></li>
                             <li><i class="bi bi-dash"></i> <a href="#call-to-action">Vision</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#Proyectosdiv">Proyectos</a></li>
                             <li><i class="bi bi-dash"></i><a asp-action="Contactos" asp-controller="Usuarios">Quiero Comunicarme!!</a></li>
                         </ul>
                     </div>

@@ -7,7 +7,7 @@ namespace Xela_api_pariss
 
 {
     public class ApplicacionDbContext : IdentityDbContext
-   //      public class ApplicacionDbContext : DbContext
+   //     public class ApplicacionDbContext : DbContext
     {
          public ApplicacionDbContext(DbContextOptions<ApplicacionDbContext> options) : base(options) { 
          }
@@ -15,7 +15,7 @@ namespace Xela_api_pariss
         {
             base.OnModelCreating(modelBuilder);
         }
-        //public DbSet<VwCTCDigitalizations> VwCTCDigitalizations { get; set; }
+        public DbSet<Code_Contacto> Code_Contacto { get; set; }
     }
   }
 

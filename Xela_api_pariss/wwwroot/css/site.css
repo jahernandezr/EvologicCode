@@ -86,3 +86,37 @@ opacity:0.5;
     .imgcard:hover {
         filter: opacity(.5);
     }
+
+/*
+.word-container {
+    display: inline-block;
+    font-size: 24px;
+    animation: showLetters 1.5s linear forwards;
+}
+
+.letter {
+    opacity: 0;
+    transform: translateY(20px);
+    display: inline-block;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes showLetters {
+    0% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}*/
